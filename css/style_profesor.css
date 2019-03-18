@@ -1,0 +1,657 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html, body{
+  margin: 0; 
+  font-weight: normal;
+  font-family: 'Arial';
+  padding: 0;
+  height:100%;
+  margin:0;
+
+}
+
+.contenedor {
+  background-color: rgb(240, 240, 240);
+  margin: 0;
+  margin-top: 28px;
+  padding: 0;
+  min-height: 100%;
+}
+
+
+.logo {
+  vertical-align: middle;
+  margin-right: 55px;
+  margin-left: 133px;
+
+}
+
+
+.contenedor2 {
+    display: flex;
+    width: 100%;
+    background-color: rgb(240, 240, 240);
+    flex-direction: column;
+    align-items: center;
+    height:100%;
+
+  }
+  
+
+  input, select {
+    margin: 4px;
+    padding: 5px;
+    border-radius: 5px;
+  }
+  
+  input[type="text"], input[type="number"], input[type="email"], input[type="date"], input[type="file"], input[type="year"], input[type="datetime-local"], select, textarea {
+    outline: 0px;
+    border: none;
+    border: 1px solid grey;
+ 
+  }
+  .botones {
+    display: flex;
+    flex-direction: row;
+  }
+  
+  .grabar, .limpiar {
+    color: white;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 7px;
+    background-color: #fc9404;
+    width: 50%;
+    border: none;
+    border-radius: 5px;
+    transition: all 500ms ease;
+    cursor: pointer;
+  }
+  
+  .grabar:hover {
+    color: #fc9404;
+    background-color: #fc9404;
+    background: rgba(0,0,0,0);
+    transition-duration: .5s;
+    transition-property: background-color;
+    box-shadow: inset 0 0 0 3px #fc9404;
+    cursor: pointer;
+  }
+  
+  .limpiar:hover {
+    color: #fc9404;
+    background-color: #fc9404;
+    transition-duration: .5s;
+    background: rgba(0,0,0,0);
+    transition-property: background-color;
+    box-shadow: inset 0 0 0 3px #fc9404;
+  }
+  
+  .registro {
+    -moz-box-shadow: 6px 9px 17px 0px rgba(184,184,184,0.78);
+    box-shadow: 6px 9px 17px 0px rgba(184,184,184,0.78);
+    margin: 30px;
+    width: 70%;
+    height: auto;
+    background-color: white;
+    height: auto;
+    font-family: 'Open Sans';
+  }
+  
+  .formulario {
+    text-transform: uppercase;
+    font-size: 13px;
+    padding: 5px;
+    display: flex;
+    margin: 0 auto;
+    flex-direction: column;
+    width: 90%;
+    font-family: 'Open Sans';
+  }
+
+  .registrar_dueño {
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: normal;
+    cursor: pointer;
+    color: rgb(153, 153, 153);
+    margin: 10px;
+    padding-bottom: 2px;
+    border-bottom: 2px solid black;
+    margin-bottom: 20px;
+    border-color: #fc9404;
+    transition-duration: 0.8s;
+  }
+
+  .registrar_dueño2 {
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: normal;
+    cursor: pointer;
+    color: rgb(153, 153, 153);
+    margin: 10px;
+    padding-bottom: 2px;
+    border-bottom: 2px solid black;
+    margin-bottom: 20px;
+    border-color: #fc9404;
+    transition-duration: 0.8s;
+  }
+
+  .registrar_alumno {
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: normal;
+    cursor: pointer;
+    color: rgb(153, 153, 153);
+    margin: 10px;
+    padding-bottom: 2px;
+    border-bottom: 2px solid black;
+    margin-bottom: 20px;
+    border-color: #fc9404;
+    transition-duration: 0.8s;
+  }
+
+  .registrar_alumno2 {
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: normal;
+    cursor: pointer;
+    color: rgb(153, 153, 153);
+    margin: 10px;
+    padding-bottom: 2px;
+    border-bottom: 2px solid black;
+    margin-bottom: 20px;
+    border-color: #fc9404;
+    transition-duration: 0.8s;
+  }
+
+  .registrar_alumno3 {
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: normal;
+    cursor: pointer;
+    color: rgb(153, 153, 153);
+    margin: 10px;
+    padding-bottom: 2px;
+    border-bottom: 2px solid black;
+    margin-bottom: 20px;
+    border-color: #fc9404;
+    transition-duration: 0.8s;
+  }
+
+  .registrar_alumno4 {
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: normal;
+    cursor: pointer;
+    color: rgb(153, 153, 153);
+    margin: 10px;
+    padding-bottom: 2px;
+    border-bottom: 2px solid black;
+    margin-bottom: 20px;
+    border-color: #fc9404;
+    transition-duration: 0.8s;
+  }
+
+  .registrar_alumno5 {
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: normal;
+    cursor: pointer;
+    color: rgb(153, 153, 153);
+    margin: 10px;
+    padding-bottom: 2px;
+    border-bottom: 2px solid black;
+    margin-bottom: 20px;
+    border-color: #fc9404;
+    transition-duration: 0.8s;
+  }
+
+  .titulo:hover {
+    filter: invert(100%);
+    transition-duration: 0.4s;
+  }
+
+  .titulo {
+    transition-duration: 0.4s;
+  }
+  
+  .cuerpo {
+    display: none;
+  }
+
+  .cuerpo2 {
+    display: none;
+  }
+
+  .cuerpo3 {
+    display: none;
+  }
+
+  .cuerpo4 {
+    display: none;
+  }
+
+  .cuerpo5 {
+    display: none;
+  }
+  
+  .registrar {
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: normal;
+    cursor: pointer;
+    color: rgb(153, 153, 153);
+    margin: 10px;
+    padding-bottom: 2px;
+    border-bottom: 2px solid black;
+    margin-bottom: 20px;
+    border-color: #fc9404;
+    transition-duration: 0.8s;
+  }
+
+
+#cssmenu {
+background-color: orange;
+width: auto;
+position: fixed; /*Fixed ya que queremos que la posición sea en relación al navegador*/
+top: 0; /*El valor 0 indica que va a quedar arriba de todo*/
+left: 0; /*Para que el menu se ubique siempre en la parte izquierda de la pantalla*/
+width: 100%; /*100% para que ocupe todo el ancho del navegador*/
+font-family: 'Open Sans';
+}
+
+#cssmenu ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  line-height: 1;
+  display: block;
+  zoom: 1;
+}
+
+#cssmenu ul:after {
+  content: " ";
+  display: block;
+  font-size: 0;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+
+#cssmenu ul li {
+  display: inline-block;
+  padding: 0;
+  margin: 0;
+}
+
+#cssmenu.align-right ul li {
+  float: right;
+}
+#cssmenu.align-center ul {
+  text-align: center;
+}
+#cssmenu ul li a {
+  color: #ffffff;
+  text-decoration: none;
+  display: block;
+  padding: 15px 25px;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 14px;
+  position: relative;
+  -webkit-transition: color .25s;
+  -moz-transition: color .25s;
+  -ms-transition: color .25s;
+  -o-transition: color .25s;
+  transition: color .25s;
+}
+#cssmenu ul li a:hover {
+  color: #333333;
+}
+#cssmenu ul li a:hover:before {
+  width: 100%;
+}
+#cssmenu ul li a:after {
+  content: "";
+  display: block;
+  position: absolute;
+  right: -3px;
+  top: 19px;
+  height: 6px;
+  width: 6px;
+  background: #ffffff;
+  opacity: .5;
+}
+
+#cssmenu ul li a:before {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 3px;
+  width: 0;
+  background: #333333;
+  -webkit-transition: width .25s;
+  -moz-transition: width .25s;
+  -ms-transition: width .25s;
+  -o-transition: width .25s;
+  transition: width .25s;
+}
+
+#cssmenu ul li.last > a:after,
+#cssmenu ul li:last-child > a:after {
+  display: none;
+}
+#cssmenu ul li.active a {
+  color: #333333;
+}
+#cssmenu ul li.active a:before {
+  width: 100%;
+}
+#cssmenu.align-right li.last > a:after,
+#cssmenu.align-right li:last-child > a:after {
+  display: block;
+}
+#cssmenu.align-right li:first-child a:after {
+  display: none;
+}
+@media screen and (max-width: 768px) {
+  #cssmenu ul li {
+    float: none;
+    display: block;
+  }
+  #cssmenu ul li a {
+    width: 100%;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    border-bottom: 1px solid #fb998c;
+  }
+  #cssmenu ul li.last > a,
+  #cssmenu ul li:last-child > a {
+    border: 0;
+  }
+  #cssmenu ul li a:after {
+    display: none;
+  }
+  #cssmenu ul li a:before {
+    display: none;
+  }
+}
+
+.flecha {
+    margin-left: 5px;
+    margin-bottom: 3px;
+    vertical-align: middle;
+    float: right;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+table, th, td {
+  font-size: 15px;
+}
+
+table {
+  background-color: white;
+  width: 100%;
+  margin-bottom: 15px;
+  font-family: 'Arial';
+}
+
+th, td {
+  padding: 4px;
+  text-align: center;
+}
+
+thead {
+  color: white;
+  background: linear-gradient(to bottom, rgba(255,168,76,1) 0%,rgba(255,123,13,1) 100%);
+}
+
+td, tr {
+  font-weight: normal;
+}
+
+tbody tr:nth-child(odd) {
+  background-color:white;
+}
+tbody tr:nth-child(even) {
+  background-color:#E1EEf4;
+}
+
+th {
+  font-weight: bold;
+}
+
+.eliminar {
+  cursor: pointer;
+  margin-right: 5px;
+  vertical-align: center;
+}
+
+.editar {
+  cursor: pointer;
+  vertical-align: center;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+.modal-body {
+  display: flex;
+  justify-content: center;
+ }
+ 
+ .inputs {
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+   justify-content: center;
+   width: 70%;
+ }
+ 
+ .inputs input[type="text"], .inputs input[type="number"] {
+   width: 100%;
+ }
+ 
+ .inputs input[type="submit"], .inputs input[type="reset"] {
+   justify-content: center;
+   width: 40%;
+   margin-top: 10px;
+   margin-bottom: 10px;
+   margin-left: 60px;
+   border: none;
+   border-radius: 5px;  
+   background-color: #fc9404;
+   transition: all 500ms ease;
+   cursor: pointer;
+   color: white;
+ }
+ 
+ .inputs input[type="submit"]:hover, .inputs input[type="reset"]:hover {
+   color: #fc9404;
+   background-color: #fc9404;
+   background: rgba(0,0,0,0);
+   transition-duration: .5s;
+   transition-property: background-color;
+   box-shadow: inset 0 0 0 3px #fc9404;
+   cursor: pointer;
+ }
+ 
+ /* Modal Content */
+ .modal-content {
+   position: relative;
+   background-color: rgb(255, 255, 255);
+   margin: auto;
+   padding: 0;
+   border: 1px solid #888;
+   width: 80%;
+   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+   -webkit-animation-name: animatetop;
+   -webkit-animation-duration: 0.4s;
+   animation-name: animatetop;
+   animation-duration: 0.4s;
+ }
+
+/* Add Animation */
+@-webkit-keyframes animatetop {
+  from {top:-300px; opacity:0} 
+  to {top:0; opacity:1}
+}
+
+@keyframes animatetop {
+  from {top:-300px; opacity:0}
+  to {top:0; opacity:1}
+}
+
+/* The Close Button */
+.close {
+  color: rgb(110, 110, 110);
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  transition-duration: 1s;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.modal-header {
+  padding: 2px 16px;
+  background-color: white;
+  color: black;
+  border-bottom: 1px solid rgb(182, 182, 182);
+}
+
+.modal-body {padding: 2px 16px;}
+
+.modal-footer {
+  padding: 2px 16px;
+  background-color: white;
+  color: black;
+}
+
+.inputs {
+  margin: 4px;
+}
+
+
+
+/*Set a min width where your table start to look like crap*/
+table { 
+  min-width: 600px; 
+  font-family: 'Arial';
+}
+
+/*The next 3 sections make the magic happen*/
+
+table, td {
+  border: .1px solid rgb(199, 199, 199);
+}
+
+
+td {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    
+}
+
+table {
+  border-collapse: collapse;
+}
+
+
+
+/*Set your columns to where you want them to be, skip the one that you can have resize to any width*/
+    /* th:nth-child(1) {
+
+
+}
+
+    td:nth-child(1) {
+      width: 151px;
+    }
+
+th:nth-child(2) {
+  
+  
+}
+
+td:nth-child(2) {
+  width: 151px;
+}
+
+th:nth-child(3) {
+
+}
+
+td:nth-child(3)  {
+width: 151px;
+}
+
+th:nth-child(4) {
+
+ 
+}
+
+td:nth-child(4) {
+  width: 151px;
+}
+
+th:nth-child(5) {
+
+ 
+}
+
+td:nth-child(5) {
+  width: 151px;
+}
+
+th:nth-child(6) {
+
+
+}
+
+td:nth-child(6) {
+  width: 151px;
+
+}  
+
+th:nth-child(6) {
+
+
+}
+
+td:nth-child(6) {
+  width: 151px;
+
+}  
+
+ */

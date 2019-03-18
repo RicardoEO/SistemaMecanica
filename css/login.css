@@ -1,0 +1,90 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat';
+    font-size: 13px;
+}
+
+body {
+    height: 100%;
+    background-image: url("../img/wallpaper.jpg");
+    background-repeat: no-repeat;
+}
+
+.container {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+
+  }
+  
+ form {
+    display: flex;
+    width: 60%;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  section {
+      height: auto;
+      padding: 6px;
+      background-color: rgba(100, 100, 100, 0.4);
+      border-radius: 5px;
+      width: 20%;
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      align-items: center;
+      padding-bottom: 18px;
+  }
+
+  input {
+      border: none;
+      border: 1px solid grey;
+      border-radius: 3px;
+      margin: 6px;
+
+  }
+
+  input[type="email"],[type="password"] {
+    border-radius: 20px;
+    padding: 8px;
+    padding-left: 10px;
+    background-color: #FFFFFF;
+
+    color: black;
+  }
+
+  img {
+      margin: 18px 0 18px 0;
+  }
+
+  .boton {
+    background-size: 300% 100%;
+    border-radius: 20px;
+    padding: 10px;
+    color: white;
+    font-weight: bold;
+    border: none;
+    background-image: linear-gradient(to right, #f5ce62, #e43603, #fa7199, #e85a19);
+    moz-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+    margin-bottom: 18px;
+  }
+
+  .boton:hover {
+      cursor: pointer;
+    background-position: 100% 0;
+    moz-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+}
+
+a {
+    margin-bottom: 18px;
+}
